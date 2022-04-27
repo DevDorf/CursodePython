@@ -1,6 +1,4 @@
-A = float(input())
-B = float(input())
-C = float(input())
+A, B, C = map(float, input().split(" "))
 tri = (A*C)/2
 cir = 3.14159*C**2
 tra = ((A + B) * C)/2
