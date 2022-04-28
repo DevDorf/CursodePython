@@ -1,11 +1,9 @@
-A, B, C = map(float, input().split(" "))
-tri = (A*C)/2
-cir = 3.14159*C**2
-tra = ((A + B) * C)/2
-qua = B*B
-ret = A*B
-print('TRIANGULO: {:.3f}'.format(tri))
-print('CIRCULO: {:.3f}'.format(cir))
-print('TRAPEZIO: {:.3f}'.format(tra))
-print('QUADRADO: {:.3f}'.format(qua))
-print('RETANGULO: {:.3f}'.format(ret))
+n1 = float(input('Digite a primeira nota:'))
+n2 = float(input('Digite a segunda média:'))
+m = (n1 + n2)/2
+print('A sua média foi: {:.1f} '.format(m))
+if m >= 6.0:
+    print('Você foi aprovado')
+else:
+    print('Você foi reprovado!')
+
