@@ -1,9 +1,8 @@
-n1 = float(input('Digite a primeira nota:'))
-n2 = float(input('Digite a segunda média:'))
-m = (n1 + n2)/2
-print('A sua média foi: {:.1f} '.format(m))
-if m >= 6.0:
-    print('Você foi aprovado')
+nome = (input('Qual é o seu nome?'))
+if nome == 'Caio':
+    print('Que nome lindo!')
+elif nome == 'João':
+    print('Mais um João no mundo')
 else:
-    print('Você foi reprovado!')
-
+    print('Que nome sem graça do caralho!')
+print(f'Tenha um bom dia {nome}')
