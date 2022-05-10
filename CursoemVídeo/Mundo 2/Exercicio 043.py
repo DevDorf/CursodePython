@@ -1,9 +1,9 @@
 print('--- Calculadora IMC ---')
-peso = float(input('Digite o seu peso em Kg:\n'))
-altura = float(input('Digite sua altura em m:\n'))
+peso = float(input('Digite o seu peso em (Kg):\n'))
+altura = float(input('Digite sua altura em (m):\n'))
 
-imc = (peso / altura) ** 2
-print(f'Seu IMC é: {imc:.2f}')
+imc = peso / (altura ** 2)
+print(f'Seu IMC é: {imc:.1f}')
 
 if imc < 18.5:
     print('Abaixo do peso')
