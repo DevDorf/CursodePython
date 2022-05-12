@@ -1,14 +1,11 @@
 x = int(input())
 y = int(input())
-cont = x
+cont = y
+soma = 0
 
-while cont < y:
+while cont >= x:
     if cont % 2 == 1:
-        soma = cont + cont
-    cont = cont - 1
-else:
-    cont > y
-    cont % 2 == 1
-    soma = cont + cont
+        soma = cont + soma
     cont = cont + 1
 print(soma)
+
