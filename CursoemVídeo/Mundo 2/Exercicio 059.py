@@ -1,5 +1,6 @@
-resp = 4
-while resp == 4:
+resp = 0
+while resp != 5:
+    print('=-=' * 10)
     num1 = float(input('Digite o primeiro valor: '))
     num2 = float(input('Digite o segundo valor: '))
     print('###' * 13)
@@ -23,4 +24,6 @@ while resp == 4:
     elif resp == 4:
         print('Vamos de novo!')
     elif resp == 5:
-        print('Até a proxima!')
+        print('Fim do programa, Até a proxima!')
+    else:
+        print('Valor invalido')

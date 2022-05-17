@@ -1,5 +1,5 @@
 from random import randint
-jogador =  11
+jogador = 11
 computador = 12
 cont = 0
 while computador != jogador:
