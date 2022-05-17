@@ -1,5 +1,4 @@
 num = float(input())
-num = 0
 doado = 0
 while num != -1:
     doado += num
