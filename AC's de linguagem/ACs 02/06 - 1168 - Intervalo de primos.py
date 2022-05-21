@@ -1,9 +1,12 @@
 inicio = int(input())
 fim = int(input())
-primo = 0
+primo = divisor = 0
 for c in range(inicio, fim + 1):
-    if inicio % c == 0:
-        print(inicio)
+    for x in range(1, c):
+        if c % x == 0:
+            divisor += 1
+    if divisor == 1:
         primo += 1
-        inicio += 1
-print('primos: ', primo)
+        print(c)
+    divisor = 0
+print(f'primos: {primo}')
