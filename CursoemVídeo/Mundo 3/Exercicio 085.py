@@ -1,7 +1,6 @@
 pares = []
 impares = []
 todos = []
-
 for c in range(1, 8):
     numero = int(input(f'Digite {c}° numero: '))
     if numero % 2 == 0:

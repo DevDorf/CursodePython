@@ -1,19 +1,12 @@
-matriz1 = []
-matriz2 = []
-matriz3 = []
-matriztot = []
-for c in range(0, 3):
-    matriz1.append(int(input(f'Digite um valor para [0, {c}]: ')))
-for c in range(0, 3):
-    matriz2.append(int(input(f'Digite um valor para [1, {c}]: ')))
-for c in range(0, 3):
-    matriz3.append(int(input(f'Digite um valor para [2, {c}]: ')))
-matriztot.append(matriz1[:])
-matriztot.append(matriz2[:])
-matriztot.append(matriz3[:])
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
 print('-=-' * 15)
-for c in matriztot:
-    print(f'{c} ')
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end='')
+    print()
 
 
 
