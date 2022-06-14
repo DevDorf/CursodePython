@@ -1,12 +1,8 @@
-soma = 0
 cont = 0
-media = []
-
-media = (input())
-
-for c in media:
-    soma += c
-    cont += 1
-med = soma / (cont + 1)
-
-print(med)
+s = 0
+while cont < 5:
+    if cont % 2 == 1:
+        s += cont
+        cont += 1
+print(cont)
+print(f's= {s}')
